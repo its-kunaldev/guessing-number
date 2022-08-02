@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    color: #222;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+}
+#reset{
+    background-color: #eee;
+    padding: 13px 10px;
+    font-size: 1.4vw;
+    font-family: 'Press Start 2P', cursive;
+    margin: 1rem 0 0 1rem;
+    cursor: pointer;
+    border: none;
+}
+#container h1{
+    color: #eee;
+    font-size: 3.5vw;
+    margin: 3.5rem 0 5rem 0;
+    text-align: center;
+}
+.extra{
+    position: absolute;
+    color: #eee;
+    top: 20px;
+    right: 30px;
+}
+hr{
+    height: 5px;
+    background-color: #eee;
+}
+#box{
+    width: 8rem;
+    height: 5.5rem;
+    background-color: #eee;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 31%;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.4vw;
+}
+.logic{
+    display: flex;
+    color: #eee;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6rem;
+}
+#score-container{
+    padding-bottom: 1.7rem;
+}
+#numbers{
+    border: 3px solid #eee;
+    width: 13vw;
+    height: 5vw;
+    font-size: 2.8vw;
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    outline: none;
+}
+#check-btn{
+    font-size: 1.4vw;
+    font-family: 'Press Start 2P', cursive;
+    padding: 13px 10px;
+    cursor: pointer;
+}
+#guessing{
+    padding-bottom: 4rem;
+}
+.score{
+    padding-top: 2rem;
+}
+.highscore{
+    padding-top: 1rem;
+}
+
+@media(max-width:600px){
+    #container h1{
+        font-size: 17px;
+    }
+    .extra{
+        font-size: 10px;
+        top: 8.5rem;
+        left: 3.6rem;
+    }
+    #reset{
+        font-size: 15px;
+    }
+    #box{
+        width: 6rem;
+        height: 3rem;
+        font-size: 25px;
+        left: 60%;
+        top: 26.5%;
+    }
+    .logic{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+        /* justify-content: space-between; */
+    }
+    #numbers{
+        width: 7rem;
+        height: 4rem;
+        font-size: 30px;
+    }
+    #check-btn{
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+    #guessing{
+        font-size: 15px;
+    }
+}
